@@ -14,7 +14,13 @@ class Fact extends React.Component {
             },
             { day: 3,
                 fact: "The world's largest gingerbread man weighs 466 pounds!"
-            }
+            },
+            { day: 4,
+                fact: "The song, 'Jingle Bells' was the first song to be broadcast from space!"
+            },
+            { day: 5,
+                fact: "Some speculate that Rudolph's red nose was due to a parasite."
+            },
         ];
 
 

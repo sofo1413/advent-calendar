@@ -7,14 +7,8 @@ class Calendar extends React.Component {
         this.state = {
             today: new Date().getDate()
         }
-        // this.date = this.date.bind(this);
     }
 
-    // date() {
-    //     var currDate = new Date();
-    //     this.setState({today: currDate});
-    //     console.log(this.state.today);
-    // }
     render() {
         return(
             <div>
