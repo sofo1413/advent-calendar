@@ -1,7 +1,9 @@
 import React from 'react';
 import Day from "./Day";
+import "./style.css"
 
 class Calendar extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -9,35 +11,36 @@ class Calendar extends React.Component {
         }
     }
 
+
     render() {
         return(
-            <div>
-                <Day today={this.state.today} day={1}/>
-                <Day today={this.state.today} day={2}/>
-                <Day today={this.state.today} day={3}/>
-                <Day today={this.state.today} day={4}/>
-                <Day today={this.state.today} day={5}/>
-                <Day today={this.state.today} day={6}/>
-                <Day today={this.state.today} day={7}/>
-                <Day today={this.state.today} day={8}/>
-                <Day today={this.state.today} day={9}/>
-                <Day today={this.state.today} day={10}/>
-                <Day today={this.state.today} day={11}/>
-                <Day today={this.state.today} day={12}/>
-                <Day today={this.state.today} day={13}/>
-                <Day today={this.state.today} day={14}/>
-                <Day today={this.state.today} day={15}/>
-                <Day today={this.state.today} day={16}/>
-                <Day today={this.state.today} day={17}/>
-                <Day today={this.state.today} day={18}/>
-                <Day today={this.state.today} day={19}/>
-                <Day today={this.state.today} day={20}/>
-                <Day today={this.state.today} day={21}/>
-                <Day today={this.state.today} day={22}/>
-                <Day today={this.state.today} day={23}/>
-                <Day today={this.state.today} day={24}/>
+            <div className="container">
+                <Day className="days" today={this.state.today} day={1}/>
+                <Day className="days" today={this.state.today} day={2}/>
+                <Day className="days" today={this.state.today} day={3}/>
+                <Day className="days" today={this.state.today} day={4}/>
+                <Day className="days" today={this.state.today} day={5}/>
+                <Day className="days" today={this.state.today} day={6}/>
+                <Day className="days" today={this.state.today} day={7}/>
+                <Day className="days" today={this.state.today} day={8}/>
+                <Day className="days" today={this.state.today} day={9}/>
+                <Day className="days" today={this.state.today} day={10}/>
+                <Day className="days" today={this.state.today} day={11}/>
+                <Day className="days" today={this.state.today} day={12}/>
+                <Day className="days" today={this.state.today} day={13}/>
+                <Day className="days" today={this.state.today} day={14}/>
+                <Day className="days" today={this.state.today} day={15}/>
+                <Day className="days" today={this.state.today} day={16}/>
+                <Day className="days" today={this.state.today} day={17}/>
+                <Day className="days" today={this.state.today} day={18}/>
+                <Day className="days" today={this.state.today} day={19}/>
+                <Day className="days" today={this.state.today} day={20}/>
+                <Day className="days" today={this.state.today} day={21}/>
+                <Day className="days" today={this.state.today} day={22}/>
+                <Day className="days" today={this.state.today} day={23}/>
+                <Day className="days" today={this.state.today} day={24}/>
                 {this.state.today == 25 &&
-                    <h2>Merry Christmas!</h2>
+                    <h2 className="days" >Merry Christmas!</h2>
                 }
             </div>
         )

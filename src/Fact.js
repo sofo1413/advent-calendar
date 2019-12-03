@@ -1,4 +1,6 @@
 import React from 'react';
+import "./style.css"
+
 // Gets day as prop from Day. 
 class Fact extends React.Component {
     render() {
@@ -49,7 +51,7 @@ class Fact extends React.Component {
 
 
         return(
-            <div>
+            <div className="facts">
                 {facts[this.props.day].fact}
             </div>
         )
