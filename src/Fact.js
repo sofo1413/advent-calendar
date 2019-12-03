@@ -3,9 +3,6 @@ import React from 'react';
 class Fact extends React.Component {
     render() {
         const facts = [
-            { day: 19,
-                fact: "The UPS delivers 20 billion cards and packages throughout the Holiday season."
-            },
             { day: 1,
                 fact: "The Löschner family of Germany has the largest nutcracker collection: over 4,000!"
             },
@@ -35,6 +32,18 @@ class Fact extends React.Component {
             },
             { day: 10,
                 fact: "Coca-Cola used Santa in many ads and hired an illustrator to design Santa as happy and jolly rather than the original spooky figure, which created the image of Santa that most know today!"
+            },
+            { day: 11,
+                fact:"Almost 15,000 people go to the hospital every year for holiday-related decorating accidents"
+            },
+            { day: 12,
+                fact: "In Canada, Santa has his own zip code for a literacy incentive called 'Santa Letter-Writing-Program'.  Can you guess the zip code? HOH OHO!"
+            },
+            { day: 13,
+                fact:"In 2018, total retail sales during November and December hit $717.5 billion!"
+            },
+            { day: 19,
+                fact: "The UPS delivers 20 billion cards and packages throughout the Holiday season."
             },
         ];
 
