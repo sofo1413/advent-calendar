@@ -21,6 +21,21 @@ class Fact extends React.Component {
             { day: 5,
                 fact: "Some speculate that Rudolph's red nose was due to a parasite."
             },
+            { day: 6,
+                fact: "The two weeks leading up to Christmas are the most common time for couples to break up.  Interesting Christmas spirit we have, huh?"
+            },
+            { day: 7,
+                fact: "It is a popular Japanese tradition to eat Christmas dinner at KFC!"
+            },
+            { day: 8,
+                fact: "A German fable is that on Christmas Eve, those with a pure heart can hea animals talking. How sweet."
+            },
+            { day: 9,
+                fact: "The two weeks leading up to Christmas are the most common time for couples to break up.  Interesting Christmas spirit we have, huh?"
+            },
+            { day: 10,
+                fact: "Coca-Cola used Santa in many ads and hired an illustrator to design Santa as happy and jolly rather than the original spooky figure, which created the image of Santa that most know today!"
+            },
         ];
 
 

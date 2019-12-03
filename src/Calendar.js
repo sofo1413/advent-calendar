@@ -12,7 +12,6 @@ class Calendar extends React.Component {
     render() {
         return(
             <div>
-                <Day today={this.state.today} day={0}/>
                 <Day today={this.state.today} day={1}/>
                 <Day today={this.state.today} day={2}/>
                 <Day today={this.state.today} day={3}/>
@@ -37,10 +36,9 @@ class Calendar extends React.Component {
                 <Day today={this.state.today} day={22}/>
                 <Day today={this.state.today} day={23}/>
                 <Day today={this.state.today} day={24}/>
-                <Day today={this.state.today} day={25}/>
-                <Day month="12" day="02"/>
-
-
+                {this.state.today == 25 &&
+                    <h2>Merry Christmas!</h2>
+                }
             </div>
         )
     }
