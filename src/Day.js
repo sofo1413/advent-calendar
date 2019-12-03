@@ -17,7 +17,7 @@ class Day extends React.Component {
             this.setState({access: true});
         }
         else if(this.state.access ==true) {
-            this.setState({access: false});
+            // this.setState({access: false});
         }
     }
     render() {
