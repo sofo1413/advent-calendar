@@ -14,10 +14,7 @@ class Day extends React.Component {
     }
     handleClick(e) {
         if(this.props.today >= this.props.day) {
-            this.setState({access: true});
-        }
-        else if(this.state.access ==true) {
-            // this.setState({access: false});
+            this.setState(state =>({access: !state.access}));
         }
     }
     render() {
