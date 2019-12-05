@@ -81,9 +81,13 @@ class Fact extends React.Component {
                 fact: "Merry Christmas!!"
             }
         ];
+        const style = {
+            color: "#FFFFDB",
+            opacity: "1"
+        }
 
         return(
-            <div>
+            <div style={style}>
                 {facts[this.props.day].fact}
             </div>
         )

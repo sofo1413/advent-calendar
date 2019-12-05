@@ -25,19 +25,25 @@ class Day extends React.Component {
     }
     render() {
         const style = {
-            margin: "5%",
-            width: "10%",
+            margin: "1.5vw",
+            width: "12%",
             backgroundColor: "#E34446",
-            color: "darkgreen",
-            padding: "2%"
+            color: "#fffacf",
+            opacity: ".85",
+            padding: "1vw",
+            borderStyle: "solid",
+            borderColor: "darkgreen"
 
         };
         const style2 = {
-            margin: "5%",
-            width: "10%",
+            margin: "1.5vw",
+            width: "12%",
             backgroundColor: "#E36d6f",
-            color: "darkgreen",
-            padding: "2%"
+            opacity: ".85",
+            color: "#fffacf",
+            padding: "1vw",
+            borderStyle: "solid",
+            borderColor: "darkgreen"
         };
         return(
             <div style={this.props.day%2==0 ? style : style2}>
