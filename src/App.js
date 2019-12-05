@@ -11,11 +11,8 @@ function App() {
     return (
         <div className="App">
             <h1>
-                2019 Advent Calendar
+                the holiday countdown
             </h1>
-            <h2>
-                count your way to Christmas!
-            </h2>
             <img src={tree} />
           <Calendar style={style}/>
         </div>
