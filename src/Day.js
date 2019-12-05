@@ -11,12 +11,16 @@ class Day extends React.Component {
         super(props);
         this.state = {
             access: false,
+            notYet: false,
         }
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick(e) {
         if(this.props.today >= this.props.day) {
             this.setState(state =>({access: !state.access}));
+        }
+        if(this.props.today < this.props.day){
+            this.setState(state =>({notYet: !state.notYet}));
         }
     }
     render() {
@@ -28,6 +32,9 @@ class Day extends React.Component {
                 <h2 onClick={this.handleClick}>{this.props.day}</h2>
                 {this.state.access == true &&
                     <Fact day={this.props.day}/>
+                }
+                {this.state.notYet == true &&
+                    <p> Hold your horses! You can not access this day quite yet. </p>
                 }
             </div>
         )
