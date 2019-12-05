@@ -79,9 +79,8 @@ class Fact extends React.Component {
             }
         ];
 
-
         return(
-            <div className="facts">
+            <div>
                 {facts[this.props.day].fact}
             </div>
         )

@@ -39,9 +39,7 @@ class Calendar extends React.Component {
                 <Day className="days" today={this.state.today} day={22}/>
                 <Day className="days" today={this.state.today} day={23}/>
                 <Day className="days" today={this.state.today} day={24}/>
-                {this.state.today == 25 &&
-                    <h2 className="days" >Merry Christmas!</h2>
-                }
+                <Day className="days" today={this.state.today} day={25}/>
             </div>
         )
     }

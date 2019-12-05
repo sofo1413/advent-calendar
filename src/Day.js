@@ -21,14 +21,27 @@ class Day extends React.Component {
     }
     render() {
         const style = {
-            width: "25%"
+            margin: "5%",
+            width: "10%",
+            backgroundColor: "#E34446",
+            color: "darkgreen",
+            padding: "2%"
+
+        };
+        const style2 = {
+            margin: "5%",
+            width: "10%",
+            backgroundColor: "#E36d6f",
+            color: "darkgreen",
+            padding: "2%"
         };
         return(
-            <div style={style}>
+            <div style={this.props.day%2==0 ? style : style2}>
                 <h2 onClick={this.handleClick}>{this.props.day}</h2>
                 {this.state.access == true &&
                     <Fact day={this.props.day}/>
                 }
+
             </div>
         )
     }
