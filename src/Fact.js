@@ -76,6 +76,9 @@ class Fact extends React.Component {
             },
             { day: 24,
                 fact: "Nova Scotia is the world's leading exporter of Christmas trees."
+            },
+            { day: 25,
+                fact: "Merry Christmas!!"
             }
         ];
 

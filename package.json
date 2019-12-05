@@ -1,5 +1,6 @@
 {
   "name": "advent-calendar",
+  "homepage":"http://creative.colorado.edu/~alfa8405/FED/Projects/Proj2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
