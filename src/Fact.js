@@ -83,8 +83,8 @@ class Fact extends React.Component {
         ];
         const style = {
             color: "#FFFFDB",
-            opacity: "1"
-        }
+            opacity: "1",
+    }
 
         return(
             <div style={style}>
