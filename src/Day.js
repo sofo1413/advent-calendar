@@ -2,20 +2,32 @@ import React from 'react';
 import Calendar from "./Calendar";
 import Fact from "./Fact";
 import "./style.css"
+import A from "./bellA.wav"
+import B from "./bellB.wav"
+import C from "./bellC.wav"
+import D from "./bellD.wav"
+import E from "./bellE.wav"
+import F from "./bellF.wav"
+import G from "./bellG.wav"
 
 
 // Gets as props from calendar: day (which is day clicked)
 // and today, which is today. 
 class Day extends React.Component {
     constructor(props) {
+        const notes = [
+            A, B, C, D, E, F, G,
+        ];
         super(props);
         this.state = {
             access: false,
             notYet: false,
         }
+        this.audio = new Audio(notes[Math.floor(Math.random()*notes.length)]);
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick(e) {
+        this.audio.play();
         if(this.props.today >= this.props.day) {
             this.setState(state =>({access: !state.access}));
         }

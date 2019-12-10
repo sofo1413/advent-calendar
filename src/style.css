@@ -26,7 +26,7 @@ h1 {
 }
 
 img {
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -5%);
     width: 200vh;
     z-index: 1;
     position: absolute;
